@@ -1,0 +1,49 @@
+<sdf version='1.6'>
+  <model name='Sensor'>
+    <link name='link'>
+      <pose>0 0 0 0 0 0</pose>
+      <inertial>
+        <pose>0 0 0.035003035 0 0 0</pose>
+        <mass>0.13</mass>
+        <inertia>
+          <ixx>8.018737945431742e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>8.018737945431742e-05</iyy>
+          <iyz>0</iyz>
+          <izz>5.418967911032867e-05</izz>
+        </inertia>
+      </inertial>
+      <collision name='collision_base'>
+        <pose>0 0 0.0175015175 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.05001062 0.05001062 0.035003035</size>
+          </box>
+        </geometry>
+      </collision>
+      <collision name='collision_top'>
+        <pose>0 0 0.0525045525 0 0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.02</radius>
+            <length>0.035003035</length>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name='visual'>
+        <pose>0 0 0 0 0 1.5707</pose>
+        <geometry>
+          <mesh>
+            <uri>file://resources/sensor/meshes/hokuyo_urg04lx.dae</uri>
+            <scale>10 10 10</scale>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <plugin name='ignition::gazebo::systems::OdometryPublisher' filename='ignition-gazebo-odometry-publisher-system'>
+      <odom_topic>/Sensor/odometry</odom_topic>
+      <dimensions>3</dimensions>
+    </plugin>
+  </model>
+</sdf>
