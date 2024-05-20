@@ -11,12 +11,13 @@ find_package(ament_cmake REQUIRED)
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 
-find_package(geometry_msgs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
+find_package(geometry_msgs REQUIRED)
 
-# rosidl_generate_interfaces(${PROJECT_NAME}
-#   # your interfaces here
-# )
+rosidl_generate_interfaces(${PROJECT_NAME}
+  "action/Patrol.action"
+  DEPENDENCIES geometry_msgs
+)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

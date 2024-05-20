@@ -25,6 +25,9 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'simulation_manager=project_main.simulation_manager:main',
+            'balloon_controller=project_main.balloon_controller:main',
+            'sensor_controller=project_main.sensor_controller:main'
         ],
     },
 )

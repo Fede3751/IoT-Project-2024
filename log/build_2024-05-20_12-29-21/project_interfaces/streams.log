@@ -1,0 +1,146 @@
+[0.307s] Invoking command in '/home/fede3751/Documents/git_repositories/IoT-Project-2024/build/project_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_main:/opt/ros/humble /home/fede3751/.local/bin/cmake --build /home/fede3751/Documents/git_repositories/IoT-Project-2024/build/project_interfaces -- -j16 -l16
+[0.374s] [  3%] Built target project_interfaces__cpp
+[0.390s] [  3%] Built target ament_cmake_python_copy_project_interfaces
+[0.406s] [ 12%] Built target project_interfaces__rosidl_typesupport_introspection_cpp
+[0.743s] running egg_info
+[0.978s] writing project_interfaces.egg-info/PKG-INFO
+[0.978s] writing dependency_links to project_interfaces.egg-info/dependency_links.txt
+[0.979s] writing top-level names to project_interfaces.egg-info/top_level.txt
+[1.075s] reading manifest file 'project_interfaces.egg-info/SOURCES.txt'
+[1.076s] writing manifest file 'project_interfaces.egg-info/SOURCES.txt'
+[1.107s] [ 12%] Built target ament_cmake_python_build_project_interfaces_egg
+[1.123s] [ 22%] Built target project_interfaces__rosidl_typesupport_fastrtps_cpp
+[1.138s] [ 32%] Built target project_interfaces__rosidl_typesupport_cpp
+[1.152s] [ 41%] Built target project_interfaces__rosidl_generator_c
+[1.167s] [ 51%] Built target project_interfaces__rosidl_typesupport_fastrtps_c
+[1.181s] [ 61%] Built target project_interfaces__rosidl_typesupport_c
+[1.195s] [ 70%] Built target project_interfaces__rosidl_typesupport_introspection_c
+[1.206s] [ 70%] Built target project_interfaces
+[1.218s] [ 74%] Built target project_interfaces__py
+[1.232s] [ 80%] Built target project_interfaces__rosidl_generator_py
+[1.246s] [ 87%] Built target project_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[1.260s] [ 93%] Built target project_interfaces__rosidl_typesupport_c__pyext
+[1.275s] [100%] Built target project_interfaces__rosidl_typesupport_introspection_c__pyext
+[1.287s] Invoked command in '/home/fede3751/Documents/git_repositories/IoT-Project-2024/build/project_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_main:/opt/ros/humble /home/fede3751/.local/bin/cmake --build /home/fede3751/Documents/git_repositories/IoT-Project-2024/build/project_interfaces -- -j16 -l16
+[1.447s] Invoking command in '/home/fede3751/Documents/git_repositories/IoT-Project-2024/build/project_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_main:/opt/ros/humble /home/fede3751/.local/bin/cmake --install /home/fede3751/Documents/git_repositories/IoT-Project-2024/build/project_interfaces
+[1.489s] -- Install configuration: ""
+[1.489s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/ament_index/resource_index/rosidl_interfaces/project_interfaces
+[1.489s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/include/project_interfaces/project_interfaces
+[1.489s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/include/project_interfaces/project_interfaces/action
+[1.489s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/include/project_interfaces/project_interfaces/action/patrol.h
+[1.489s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/include/project_interfaces/project_interfaces/action/detail
+[1.489s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/include/project_interfaces/project_interfaces/action/detail/patrol__functions.c
+[1.490s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/include/project_interfaces/project_interfaces/action/detail/patrol__functions.h
+[1.490s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/include/project_interfaces/project_interfaces/action/detail/patrol__struct.h
+[1.490s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/include/project_interfaces/project_interfaces/action/detail/patrol__type_support.h
+[1.490s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/include/project_interfaces/project_interfaces/msg
+[1.490s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/include/project_interfaces/project_interfaces/msg/rosidl_generator_c__visibility_control.h
+[1.490s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/environment/library_path.sh
+[1.490s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/environment/library_path.dsv
+[1.490s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/lib/libproject_interfaces__rosidl_generator_c.so
+[1.491s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/include/project_interfaces/project_interfaces
+[1.491s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/include/project_interfaces/project_interfaces/action
+[1.491s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/include/project_interfaces/project_interfaces/action/detail
+[1.491s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/include/project_interfaces/project_interfaces/action/detail/patrol__rosidl_typesupport_fastrtps_c.h
+[1.491s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/include/project_interfaces/project_interfaces/msg
+[1.491s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/include/project_interfaces/project_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[1.491s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/lib/libproject_interfaces__rosidl_typesupport_fastrtps_c.so
+[1.491s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/include/project_interfaces/project_interfaces
+[1.491s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/include/project_interfaces/project_interfaces/action
+[1.491s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/include/project_interfaces/project_interfaces/action/detail
+[1.492s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/include/project_interfaces/project_interfaces/action/detail/patrol__rosidl_typesupport_introspection_c.h
+[1.492s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/include/project_interfaces/project_interfaces/action/detail/patrol__type_support.c
+[1.492s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/include/project_interfaces/project_interfaces/msg
+[1.492s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/include/project_interfaces/project_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[1.492s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/lib/libproject_interfaces__rosidl_typesupport_introspection_c.so
+[1.492s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/lib/libproject_interfaces__rosidl_typesupport_c.so
+[1.492s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/include/project_interfaces/project_interfaces
+[1.492s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/include/project_interfaces/project_interfaces/action
+[1.492s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/include/project_interfaces/project_interfaces/action/patrol.hpp
+[1.493s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/include/project_interfaces/project_interfaces/action/detail
+[1.493s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/include/project_interfaces/project_interfaces/action/detail/patrol__struct.hpp
+[1.493s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/include/project_interfaces/project_interfaces/action/detail/patrol__builder.hpp
+[1.493s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/include/project_interfaces/project_interfaces/action/detail/patrol__traits.hpp
+[1.493s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/include/project_interfaces/project_interfaces
+[1.493s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/include/project_interfaces/project_interfaces/action
+[1.493s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/include/project_interfaces/project_interfaces/action/detail
+[1.493s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/include/project_interfaces/project_interfaces/action/detail/dds_fastrtps
+[1.493s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/include/project_interfaces/project_interfaces/action/detail/patrol__rosidl_typesupport_fastrtps_cpp.hpp
+[1.494s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/include/project_interfaces/project_interfaces/msg
+[1.494s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/include/project_interfaces/project_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[1.494s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/lib/libproject_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[1.494s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/include/project_interfaces/project_interfaces
+[1.494s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/include/project_interfaces/project_interfaces/action
+[1.494s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/include/project_interfaces/project_interfaces/action/detail
+[1.494s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/include/project_interfaces/project_interfaces/action/detail/patrol__type_support.cpp
+[1.494s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/include/project_interfaces/project_interfaces/action/detail/patrol__rosidl_typesupport_introspection_cpp.hpp
+[1.495s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/lib/libproject_interfaces__rosidl_typesupport_introspection_cpp.so
+[1.495s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/lib/libproject_interfaces__rosidl_typesupport_cpp.so
+[1.495s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/environment/pythonpath.sh
+[1.495s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/environment/pythonpath.dsv
+[1.495s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/local/lib/python3.10/dist-packages/project_interfaces-1.0.0-py3.10.egg-info
+[1.495s] -- Installing: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/local/lib/python3.10/dist-packages/project_interfaces-1.0.0-py3.10.egg-info/dependency_links.txt
+[1.495s] -- Installing: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/local/lib/python3.10/dist-packages/project_interfaces-1.0.0-py3.10.egg-info/PKG-INFO
+[1.495s] -- Installing: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/local/lib/python3.10/dist-packages/project_interfaces-1.0.0-py3.10.egg-info/top_level.txt
+[1.495s] -- Installing: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/local/lib/python3.10/dist-packages/project_interfaces-1.0.0-py3.10.egg-info/SOURCES.txt
+[1.495s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/local/lib/python3.10/dist-packages/project_interfaces
+[1.496s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/local/lib/python3.10/dist-packages/project_interfaces/__init__.py
+[1.496s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/local/lib/python3.10/dist-packages/project_interfaces/_project_interfaces_s.ep.rosidl_typesupport_c.c
+[1.496s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/local/lib/python3.10/dist-packages/project_interfaces/action
+[1.496s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/local/lib/python3.10/dist-packages/project_interfaces/action/__init__.py
+[1.496s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/local/lib/python3.10/dist-packages/project_interfaces/action/_patrol_s.c
+[1.496s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/local/lib/python3.10/dist-packages/project_interfaces/action/_patrol.py
+[1.496s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/local/lib/python3.10/dist-packages/project_interfaces/project_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.496s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/local/lib/python3.10/dist-packages/project_interfaces/_project_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[1.496s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/local/lib/python3.10/dist-packages/project_interfaces/_project_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[1.496s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/local/lib/python3.10/dist-packages/project_interfaces/project_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.496s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/local/lib/python3.10/dist-packages/project_interfaces/libproject_interfaces__rosidl_generator_py.so
+[1.496s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/local/lib/python3.10/dist-packages/project_interfaces/project_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.542s] Listing '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/local/lib/python3.10/dist-packages/project_interfaces'...
+[1.542s] Listing '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/local/lib/python3.10/dist-packages/project_interfaces/action'...
+[1.547s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/local/lib/python3.10/dist-packages/project_interfaces/project_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.548s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/local/lib/python3.10/dist-packages/project_interfaces/project_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.548s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/local/lib/python3.10/dist-packages/project_interfaces/project_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.549s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/lib/libproject_interfaces__rosidl_generator_py.so
+[1.549s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/action/Patrol.idl
+[1.549s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/action/Patrol.action
+[1.549s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/ament_index/resource_index/package_run_dependencies/project_interfaces
+[1.549s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/ament_index/resource_index/parent_prefix_path/project_interfaces
+[1.549s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/environment/ament_prefix_path.sh
+[1.549s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/environment/ament_prefix_path.dsv
+[1.549s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/environment/path.sh
+[1.550s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/environment/path.dsv
+[1.550s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/local_setup.bash
+[1.550s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/local_setup.sh
+[1.550s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/local_setup.zsh
+[1.550s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/local_setup.dsv
+[1.550s] -- Installing: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/package.dsv
+[1.550s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/ament_index/resource_index/packages/project_interfaces
+[1.550s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/cmake/export_project_interfaces__rosidl_generator_cExport.cmake
+[1.551s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/cmake/export_project_interfaces__rosidl_generator_cExport-noconfig.cmake
+[1.551s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/cmake/export_project_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[1.551s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/cmake/export_project_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[1.551s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/cmake/project_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[1.551s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/cmake/project_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[1.551s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/cmake/project_interfaces__rosidl_typesupport_cExport.cmake
+[1.551s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/cmake/project_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[1.551s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/cmake/export_project_interfaces__rosidl_generator_cppExport.cmake
+[1.551s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/cmake/export_project_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[1.551s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/cmake/export_project_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[1.552s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/cmake/project_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[1.552s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/cmake/project_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[1.552s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/cmake/project_interfaces__rosidl_typesupport_cppExport.cmake
+[1.552s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/cmake/project_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[1.552s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/cmake/export_project_interfaces__rosidl_generator_pyExport.cmake
+[1.552s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/cmake/export_project_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[1.552s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/cmake/rosidl_cmake-extras.cmake
+[1.553s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.553s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.553s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[1.553s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[1.553s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[1.553s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[1.553s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/cmake/project_interfacesConfig.cmake
+[1.553s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/cmake/project_interfacesConfig-version.cmake
+[1.553s] -- Up-to-date: /home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/package.xml
+[1.560s] Invoked command in '/home/fede3751/Documents/git_repositories/IoT-Project-2024/build/project_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_main:/opt/ros/humble /home/fede3751/.local/bin/cmake --install /home/fede3751/Documents/git_repositories/IoT-Project-2024/build/project_interfaces

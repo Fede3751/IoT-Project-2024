@@ -1,0 +1,8 @@
+setup.py
+project_interfaces/__init__.py
+project_interfaces.egg-info/PKG-INFO
+project_interfaces.egg-info/SOURCES.txt
+project_interfaces.egg-info/dependency_links.txt
+project_interfaces.egg-info/top_level.txt
+project_interfaces/action/__init__.py
+project_interfaces/action/_patrol.py

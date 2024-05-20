@@ -1,0 +1,311 @@
+[0.999s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.999s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7421e6a55a50>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7421e6d5a290>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7421e6d5a290>>)
+[1.048s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.048s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.048s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.048s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.048s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.049s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.049s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/fede3751/Documents/git_repositories/IoT-Project-2024'
+[1.049s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.049s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.049s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.049s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.049s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.049s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.049s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.049s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.049s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(resources) by extensions ['ignore', 'ignore_ament_install']
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(resources) by extension 'ignore'
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(resources) by extension 'ignore_ament_install'
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(resources) by extensions ['colcon_pkg']
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(resources) by extension 'colcon_pkg'
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(resources) by extensions ['colcon_meta']
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(resources) by extension 'colcon_meta'
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(resources) by extensions ['ros']
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(resources) by extension 'ros'
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(resources) by extensions ['cmake', 'python']
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(resources) by extension 'cmake'
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(resources) by extension 'python'
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(resources) by extensions ['python_setup_py']
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(resources) by extension 'python_setup_py'
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(resources/balloon) by extensions ['ignore', 'ignore_ament_install']
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(resources/balloon) by extension 'ignore'
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(resources/balloon) by extension 'ignore_ament_install'
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(resources/balloon) by extensions ['colcon_pkg']
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(resources/balloon) by extension 'colcon_pkg'
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(resources/balloon) by extensions ['colcon_meta']
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(resources/balloon) by extension 'colcon_meta'
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(resources/balloon) by extensions ['ros']
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(resources/balloon) by extension 'ros'
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(resources/balloon) by extensions ['cmake', 'python']
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(resources/balloon) by extension 'cmake'
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(resources/balloon) by extension 'python'
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(resources/balloon) by extensions ['python_setup_py']
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(resources/balloon) by extension 'python_setup_py'
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(resources/base_station) by extensions ['ignore', 'ignore_ament_install']
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(resources/base_station) by extension 'ignore'
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(resources/base_station) by extension 'ignore_ament_install'
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(resources/base_station) by extensions ['colcon_pkg']
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(resources/base_station) by extension 'colcon_pkg'
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(resources/base_station) by extensions ['colcon_meta']
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(resources/base_station) by extension 'colcon_meta'
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(resources/base_station) by extensions ['ros']
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(resources/base_station) by extension 'ros'
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(resources/base_station) by extensions ['cmake', 'python']
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(resources/base_station) by extension 'cmake'
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(resources/base_station) by extension 'python'
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(resources/base_station) by extensions ['python_setup_py']
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(resources/base_station) by extension 'python_setup_py'
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(resources/sensor) by extensions ['ignore', 'ignore_ament_install']
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(resources/sensor) by extension 'ignore'
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(resources/sensor) by extension 'ignore_ament_install'
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(resources/sensor) by extensions ['colcon_pkg']
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(resources/sensor) by extension 'colcon_pkg'
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(resources/sensor) by extensions ['colcon_meta']
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(resources/sensor) by extension 'colcon_meta'
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(resources/sensor) by extensions ['ros']
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(resources/sensor) by extension 'ros'
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(resources/sensor) by extensions ['cmake', 'python']
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(resources/sensor) by extension 'cmake'
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(resources/sensor) by extension 'python'
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(resources/sensor) by extensions ['python_setup_py']
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(resources/sensor) by extension 'python_setup_py'
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(resources/sensor/materials) by extensions ['ignore', 'ignore_ament_install']
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(resources/sensor/materials) by extension 'ignore'
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(resources/sensor/materials) by extension 'ignore_ament_install'
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(resources/sensor/materials) by extensions ['colcon_pkg']
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(resources/sensor/materials) by extension 'colcon_pkg'
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(resources/sensor/materials) by extensions ['colcon_meta']
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(resources/sensor/materials) by extension 'colcon_meta'
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(resources/sensor/materials) by extensions ['ros']
+[1.070s] Level 1:colcon.colcon_core.package_identification:_identify(resources/sensor/materials) by extension 'ros'
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(resources/sensor/materials) by extensions ['cmake', 'python']
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(resources/sensor/materials) by extension 'cmake'
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(resources/sensor/materials) by extension 'python'
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(resources/sensor/materials) by extensions ['python_setup_py']
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(resources/sensor/materials) by extension 'python_setup_py'
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(resources/sensor/materials/textures) by extensions ['ignore', 'ignore_ament_install']
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(resources/sensor/materials/textures) by extension 'ignore'
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(resources/sensor/materials/textures) by extension 'ignore_ament_install'
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(resources/sensor/materials/textures) by extensions ['colcon_pkg']
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(resources/sensor/materials/textures) by extension 'colcon_pkg'
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(resources/sensor/materials/textures) by extensions ['colcon_meta']
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(resources/sensor/materials/textures) by extension 'colcon_meta'
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(resources/sensor/materials/textures) by extensions ['ros']
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(resources/sensor/materials/textures) by extension 'ros'
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(resources/sensor/materials/textures) by extensions ['cmake', 'python']
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(resources/sensor/materials/textures) by extension 'cmake'
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(resources/sensor/materials/textures) by extension 'python'
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(resources/sensor/materials/textures) by extensions ['python_setup_py']
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(resources/sensor/materials/textures) by extension 'python_setup_py'
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(resources/sensor/meshes) by extensions ['ignore', 'ignore_ament_install']
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(resources/sensor/meshes) by extension 'ignore'
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(resources/sensor/meshes) by extension 'ignore_ament_install'
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(resources/sensor/meshes) by extensions ['colcon_pkg']
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(resources/sensor/meshes) by extension 'colcon_pkg'
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(resources/sensor/meshes) by extensions ['colcon_meta']
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(resources/sensor/meshes) by extension 'colcon_meta'
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(resources/sensor/meshes) by extensions ['ros']
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(resources/sensor/meshes) by extension 'ros'
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(resources/sensor/meshes) by extensions ['cmake', 'python']
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(resources/sensor/meshes) by extension 'cmake'
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(resources/sensor/meshes) by extension 'python'
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(resources/sensor/meshes) by extensions ['python_setup_py']
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(resources/sensor/meshes) by extension 'python_setup_py'
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(resources/x3) by extensions ['ignore', 'ignore_ament_install']
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(resources/x3) by extension 'ignore'
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(resources/x3) by extension 'ignore_ament_install'
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(resources/x3) by extensions ['colcon_pkg']
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(resources/x3) by extension 'colcon_pkg'
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(resources/x3) by extensions ['colcon_meta']
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(resources/x3) by extension 'colcon_meta'
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(resources/x3) by extensions ['ros']
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(resources/x3) by extension 'ros'
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(resources/x3) by extensions ['cmake', 'python']
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(resources/x3) by extension 'cmake'
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(resources/x3) by extension 'python'
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(resources/x3) by extensions ['python_setup_py']
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(resources/x3) by extension 'python_setup_py'
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.073s] Level 1:colcon.colcon_core.package_identification:_identify(src/project_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[1.073s] Level 1:colcon.colcon_core.package_identification:_identify(src/project_interfaces) by extension 'ignore'
+[1.073s] Level 1:colcon.colcon_core.package_identification:_identify(src/project_interfaces) by extension 'ignore_ament_install'
+[1.073s] Level 1:colcon.colcon_core.package_identification:_identify(src/project_interfaces) by extensions ['colcon_pkg']
+[1.073s] Level 1:colcon.colcon_core.package_identification:_identify(src/project_interfaces) by extension 'colcon_pkg'
+[1.073s] Level 1:colcon.colcon_core.package_identification:_identify(src/project_interfaces) by extensions ['colcon_meta']
+[1.073s] Level 1:colcon.colcon_core.package_identification:_identify(src/project_interfaces) by extension 'colcon_meta'
+[1.073s] Level 1:colcon.colcon_core.package_identification:_identify(src/project_interfaces) by extensions ['ros']
+[1.073s] Level 1:colcon.colcon_core.package_identification:_identify(src/project_interfaces) by extension 'ros'
+[1.075s] DEBUG:colcon.colcon_core.package_identification:Package 'src/project_interfaces' with type 'ros.ament_cmake' and name 'project_interfaces'
+[1.075s] Level 1:colcon.colcon_core.package_identification:_identify(src/project_main) by extensions ['ignore', 'ignore_ament_install']
+[1.075s] Level 1:colcon.colcon_core.package_identification:_identify(src/project_main) by extension 'ignore'
+[1.075s] Level 1:colcon.colcon_core.package_identification:_identify(src/project_main) by extension 'ignore_ament_install'
+[1.075s] Level 1:colcon.colcon_core.package_identification:_identify(src/project_main) by extensions ['colcon_pkg']
+[1.075s] Level 1:colcon.colcon_core.package_identification:_identify(src/project_main) by extension 'colcon_pkg'
+[1.075s] Level 1:colcon.colcon_core.package_identification:_identify(src/project_main) by extensions ['colcon_meta']
+[1.075s] Level 1:colcon.colcon_core.package_identification:_identify(src/project_main) by extension 'colcon_meta'
+[1.075s] Level 1:colcon.colcon_core.package_identification:_identify(src/project_main) by extensions ['ros']
+[1.075s] Level 1:colcon.colcon_core.package_identification:_identify(src/project_main) by extension 'ros'
+[1.075s] DEBUG:colcon.colcon_core.package_identification:Package 'src/project_main' with type 'ros.ament_python' and name 'project_main'
+[1.075s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.075s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.075s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.075s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.075s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.162s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.162s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.192s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/fede3751/Documents/git_repositories/IoT-Project-2024/install
+[1.207s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 298 installed packages in /opt/ros/humble
+[1.208s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.282s] Level 5:colcon.colcon_core.verb:set package 'project_interfaces' build argument 'cmake_args' from command line to 'None'
+[1.282s] Level 5:colcon.colcon_core.verb:set package 'project_interfaces' build argument 'cmake_target' from command line to 'None'
+[1.282s] Level 5:colcon.colcon_core.verb:set package 'project_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.282s] Level 5:colcon.colcon_core.verb:set package 'project_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[1.282s] Level 5:colcon.colcon_core.verb:set package 'project_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[1.282s] Level 5:colcon.colcon_core.verb:set package 'project_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[1.282s] Level 5:colcon.colcon_core.verb:set package 'project_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[1.282s] Level 5:colcon.colcon_core.verb:set package 'project_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[1.282s] Level 5:colcon.colcon_core.verb:set package 'project_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.282s] DEBUG:colcon.colcon_core.verb:Building package 'project_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/fede3751/Documents/git_repositories/IoT-Project-2024/build/project_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces', 'merge_install': False, 'path': '/home/fede3751/Documents/git_repositories/IoT-Project-2024/src/project_interfaces', 'symlink_install': False, 'test_result_base': None}
+[1.297s] Level 5:colcon.colcon_core.verb:set package 'project_main' build argument 'cmake_args' from command line to 'None'
+[1.297s] Level 5:colcon.colcon_core.verb:set package 'project_main' build argument 'cmake_target' from command line to 'None'
+[1.297s] Level 5:colcon.colcon_core.verb:set package 'project_main' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.297s] Level 5:colcon.colcon_core.verb:set package 'project_main' build argument 'cmake_clean_cache' from command line to 'False'
+[1.297s] Level 5:colcon.colcon_core.verb:set package 'project_main' build argument 'cmake_clean_first' from command line to 'False'
+[1.297s] Level 5:colcon.colcon_core.verb:set package 'project_main' build argument 'cmake_force_configure' from command line to 'False'
+[1.297s] Level 5:colcon.colcon_core.verb:set package 'project_main' build argument 'ament_cmake_args' from command line to 'None'
+[1.297s] Level 5:colcon.colcon_core.verb:set package 'project_main' build argument 'catkin_cmake_args' from command line to 'None'
+[1.297s] Level 5:colcon.colcon_core.verb:set package 'project_main' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.297s] DEBUG:colcon.colcon_core.verb:Building package 'project_main' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/fede3751/Documents/git_repositories/IoT-Project-2024/build/project_main', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_main', 'merge_install': False, 'path': '/home/fede3751/Documents/git_repositories/IoT-Project-2024/src/project_main', 'symlink_install': False, 'test_result_base': None}
+[1.311s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.326s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.326s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/fede3751/Documents/git_repositories/IoT-Project-2024/src/project_interfaces' with build type 'ament_cmake'
+[1.327s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/fede3751/Documents/git_repositories/IoT-Project-2024/src/project_interfaces'
+[1.342s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.342s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.342s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.388s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/fede3751/Documents/git_repositories/IoT-Project-2024/src/project_main' with build type 'ament_python'
+[1.388s] Level 1:colcon.colcon_core.shell:create_environment_hook('project_main', 'ament_prefix_path')
+[1.403s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_main/share/project_main/hook/ament_prefix_path.ps1'
+[1.403s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_main/share/project_main/hook/ament_prefix_path.dsv'
+[1.403s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_main/share/project_main/hook/ament_prefix_path.sh'
+[1.418s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.418s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.469s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/fede3751/Documents/git_repositories/IoT-Project-2024/build/project_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_main:/opt/ros/humble /home/fede3751/.local/bin/cmake --build /home/fede3751/Documents/git_repositories/IoT-Project-2024/build/project_interfaces -- -j16 -l16
+[1.633s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/fede3751/Documents/git_repositories/IoT-Project-2024/src/project_main'
+[1.647s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.647s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.852s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/fede3751/Documents/git_repositories/IoT-Project-2024/build/project_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_main:/opt/ros/humble /home/fede3751/.local/bin/cmake --build /home/fede3751/Documents/git_repositories/IoT-Project-2024/build/project_interfaces -- -j16 -l16
+[1.942s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/fede3751/Documents/git_repositories/IoT-Project-2024/build/project_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_main:/opt/ros/humble /home/fede3751/.local/bin/cmake --install /home/fede3751/Documents/git_repositories/IoT-Project-2024/build/project_interfaces
+[2.004s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(project_interfaces)
+[2.005s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/fede3751/Documents/git_repositories/IoT-Project-2024/build/project_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_main:/opt/ros/humble /home/fede3751/.local/bin/cmake --install /home/fede3751/Documents/git_repositories/IoT-Project-2024/build/project_interfaces
+[2.021s] Level 1:colcon.colcon_core.environment:checking '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces' for CMake module files
+[2.022s] Level 1:colcon.colcon_core.environment:checking '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces' for CMake config files
+[2.022s] Level 1:colcon.colcon_core.shell:create_environment_hook('project_interfaces', 'cmake_prefix_path')
+[2.037s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/hook/cmake_prefix_path.ps1'
+[2.037s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/hook/cmake_prefix_path.dsv'
+[2.037s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/hook/cmake_prefix_path.sh'
+[2.038s] Level 1:colcon.colcon_core.environment:checking '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/lib'
+[2.038s] Level 1:colcon.colcon_core.shell:create_environment_hook('project_interfaces', 'ld_library_path_lib')
+[2.054s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/hook/ld_library_path_lib.ps1'
+[2.054s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/hook/ld_library_path_lib.dsv'
+[2.054s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/hook/ld_library_path_lib.sh'
+[2.055s] Level 1:colcon.colcon_core.environment:checking '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/bin'
+[2.055s] Level 1:colcon.colcon_core.environment:checking '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/lib/pkgconfig/project_interfaces.pc'
+[2.055s] Level 1:colcon.colcon_core.environment:checking '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/lib/python3.10/site-packages'
+[2.055s] Level 1:colcon.colcon_core.environment:checking '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/bin'
+[2.070s] INFO:colcon.colcon_core.shell:Creating package script '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/package.ps1'
+[2.071s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/package.dsv'
+[2.071s] INFO:colcon.colcon_core.shell:Creating package script '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/package.sh'
+[2.072s] INFO:colcon.colcon_core.shell:Creating package script '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/package.bash'
+[2.072s] INFO:colcon.colcon_core.shell:Creating package script '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/package.zsh'
+[2.073s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/colcon-core/packages/project_interfaces)
+[2.152s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(project_interfaces)
+[2.168s] Level 1:colcon.colcon_core.environment:checking '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces' for CMake module files
+[2.168s] Level 1:colcon.colcon_core.environment:checking '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces' for CMake config files
+[2.169s] Level 1:colcon.colcon_core.shell:create_environment_hook('project_interfaces', 'cmake_prefix_path')
+[2.183s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/hook/cmake_prefix_path.ps1'
+[2.184s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/hook/cmake_prefix_path.dsv'
+[2.184s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/hook/cmake_prefix_path.sh'
+[2.184s] Level 1:colcon.colcon_core.environment:checking '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/lib'
+[2.184s] Level 1:colcon.colcon_core.shell:create_environment_hook('project_interfaces', 'ld_library_path_lib')
+[2.198s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/hook/ld_library_path_lib.ps1'
+[2.199s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/hook/ld_library_path_lib.dsv'
+[2.199s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/hook/ld_library_path_lib.sh'
+[2.199s] Level 1:colcon.colcon_core.environment:checking '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/bin'
+[2.199s] Level 1:colcon.colcon_core.environment:checking '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/lib/pkgconfig/project_interfaces.pc'
+[2.199s] Level 1:colcon.colcon_core.environment:checking '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/lib/python3.10/site-packages'
+[2.199s] Level 1:colcon.colcon_core.environment:checking '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/bin'
+[2.213s] INFO:colcon.colcon_core.shell:Creating package script '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/package.ps1'
+[2.213s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/package.dsv'
+[2.214s] INFO:colcon.colcon_core.shell:Creating package script '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/package.sh'
+[2.214s] INFO:colcon.colcon_core.shell:Creating package script '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/package.bash'
+[2.214s] INFO:colcon.colcon_core.shell:Creating package script '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/project_interfaces/package.zsh'
+[2.214s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_interfaces/share/colcon-core/packages/project_interfaces)
+[2.217s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/fede3751/Documents/git_repositories/IoT-Project-2024/src/project_main': PYTHONPATH=/home/fede3751/Documents/git_repositories/IoT-Project-2024/build/project_main/prefix_override:/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_main/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/project_main build --build-base /home/fede3751/Documents/git_repositories/IoT-Project-2024/build/project_main/build install --record /home/fede3751/Documents/git_repositories/IoT-Project-2024/build/project_main/install.log --single-version-externally-managed
+[2.674s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/fede3751/Documents/git_repositories/IoT-Project-2024/src/project_main' returned '0': PYTHONPATH=/home/fede3751/Documents/git_repositories/IoT-Project-2024/build/project_main/prefix_override:/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_main/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/project_main build --build-base /home/fede3751/Documents/git_repositories/IoT-Project-2024/build/project_main/build install --record /home/fede3751/Documents/git_repositories/IoT-Project-2024/build/project_main/install.log --single-version-externally-managed
+[2.688s] Level 1:colcon.colcon_core.environment:checking '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_main' for CMake module files
+[2.688s] Level 1:colcon.colcon_core.environment:checking '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_main' for CMake config files
+[2.689s] Level 1:colcon.colcon_core.environment:checking '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_main/lib'
+[2.689s] Level 1:colcon.colcon_core.environment:checking '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_main/bin'
+[2.689s] Level 1:colcon.colcon_core.environment:checking '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_main/lib/pkgconfig/project_main.pc'
+[2.689s] Level 1:colcon.colcon_core.environment:checking '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_main/lib/python3.10/site-packages'
+[2.689s] Level 1:colcon.colcon_core.shell:create_environment_hook('project_main', 'pythonpath')
+[2.702s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_main/share/project_main/hook/pythonpath.ps1'
+[2.702s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_main/share/project_main/hook/pythonpath.dsv'
+[2.702s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_main/share/project_main/hook/pythonpath.sh'
+[2.703s] Level 1:colcon.colcon_core.environment:checking '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_main/bin'
+[2.703s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(project_main)
+[2.715s] INFO:colcon.colcon_core.shell:Creating package script '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_main/share/project_main/package.ps1'
+[2.716s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_main/share/project_main/package.dsv'
+[2.716s] INFO:colcon.colcon_core.shell:Creating package script '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_main/share/project_main/package.sh'
+[2.716s] INFO:colcon.colcon_core.shell:Creating package script '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_main/share/project_main/package.bash'
+[2.716s] INFO:colcon.colcon_core.shell:Creating package script '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_main/share/project_main/package.zsh'
+[2.717s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/project_main/share/colcon-core/packages/project_main)
+[2.717s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.717s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.717s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.717s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.733s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.733s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.733s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.741s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.755s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/local_setup.ps1'
+[2.756s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/_local_setup_util_ps1.py'
+[2.757s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/setup.ps1'
+[2.771s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/local_setup.sh'
+[2.772s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/_local_setup_util_sh.py'
+[2.772s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/setup.sh'
+[2.786s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/local_setup.bash'
+[2.786s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/setup.bash'
+[2.800s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/local_setup.zsh'
+[2.801s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/fede3751/Documents/git_repositories/IoT-Project-2024/install/setup.zsh'
