@@ -5,3 +5,10 @@
 </p>
 
 Official repository for the IoT project 2024.
+
+
+You can start the simulation displayed in the image with the command:
+
+```
+ros2 launch project_main simulation_launch.py
+```
