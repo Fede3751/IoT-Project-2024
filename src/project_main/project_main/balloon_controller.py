@@ -11,6 +11,7 @@ from std_msgs.msg import String
 from geometry_msgs.msg import Point, Vector3, Twist
 from nav_msgs.msg import Odometry
 
+import math_utils
 from project_interfaces.action import Patrol
 
 
@@ -68,7 +69,7 @@ class BalloonController(Node):
     def store_position(self, odometry_msg : Odometry):
 
         self.position = odometry_msg.pose.pose.position
-        self.yaw = get_yaw(
+        self.yaw = math_utils.get_yaw(
             odometry_msg.pose.pose.orientation.x,
             odometry_msg.pose.pose.orientation.y,
             odometry_msg.pose.pose.orientation.z,
@@ -127,13 +128,9 @@ class BalloonController(Node):
 
     def rotate_to_target(self, target, eps = 0.02):
 
-        target = (target.x, target.y, target.z)
-
         # We compute the angle between the current target position and the target
         # position here
-
-        start_position = (self.position.x, self.position.y)
-        target_angle = angle_between_points(start_position, target)
+        target_angle = math_utils.angle_between_points(self.position, target)
         angle_to_rotate = target_angle - self.yaw
 
         # Normalize the angle difference to be within the range [-pi, pi]
@@ -170,92 +167,37 @@ class BalloonController(Node):
     def move_to_target(self, target, eps = 0.5, angle_eps = 0.05):
 
 
-        target = (target.x, target.y, target.z)
-        position = (self.position.x, self.position.y, self.position.z)
-        distance = point_distance(position, target)
+        # Save the target position and compute the distance
+        distance = math_utils.point_distance(self.position, target)
 
+        # Keep publishing movement while the distance is greater than the given EPS
         while (distance > eps):
 
-            mv = move_vector(position, target)
+            # Compute the move vector with the given position and target
+            mv = math_utils.move_vector(self.position, target)
 
             twist_msg = Twist()
             twist_msg.linear.x = mv[0]
             twist_msg.linear.z = mv[1]
 
+            # Check if Balloon is still facing the target correctly, otherwise add angular
+            # velocity to the Twist msg
+            target_angle = math_utils.angle_between_points(self.position, target)
 
-            position = (self.position.x, self.position.y, self.position.z)
-            distance = point_distance(position, target)
-
-            target_angle = angle_between_points(position, target)
-
-
-            angle = angle_between_points(position, target)
-
-            if not (angle-angle_eps < self.yaw < angle+angle_eps):
-                angle_diff = (self.yaw-angle)
+            if not (target_angle - angle_eps < self.yaw < target_angle + angle_eps):
+                angle_diff = (self.yaw - target_angle)
                 twist_msg.angular = Vector3(x=0.0, y=0.0, z=math.sin(angle_diff))
 
 
+            # Publish msg
             self.cmd_vel_publisher.publish(twist_msg)
 
+            # Update position and distance after finishing
+            distance = math_utils.point_distance(self.position, target)
 
+
+        # After reaching the target, publish a stop msg
         self.cmd_vel_publisher.publish(self.stop_msg)
-
-
-def angle_between_points(p0 : tuple, p1 : tuple):
-
-    '''
-    Computes the angle between the two given points, in radiants.
-    p0: the coordinates of the first point (x0, y0)
-    p1: the coordinates of the second point (x1, y1)
-    '''
-
-    vector_between = (p1[0] - p0[0], p1[1] - p0[1])
-
-    norm = math.sqrt(vector_between[0] ** 2 + vector_between[1] ** 2)
-    direction = (vector_between[0] / norm, vector_between[1] / norm)
-
-    return math.atan2(direction[0], direction[1]) % (math.pi * 2)
-
-def point_distance(p0, p1):
-
-    vec = (p1[0] - p0[0], p1[1] - p0[1], p1[2] - p0[2])
-    return math.sqrt(vec[0]**2 + vec[1]**2 + vec[2]**2)
-
-
-def move_vector(p0, p1):
-
-    vec = (math.sqrt((p1[0] - p0[0])**2 + (p1[1] - p0[1])**2), p1[2] - p0[2])
-    norm = math.sqrt(vec[0]**2 + vec[1]**2)
-
-    return (vec[0]/norm, vec[1]/norm)
-
-def euler_from_quaternion(x, y, z, w):
-    
-    """
-    Convert a quaternion into euler angles (roll, pitch, yaw)
-    roll is rotation around x in radians (counterclockwise)
-    pitch is rotation around y in radians (counterclockwise)
-    yaw is rotation around z in radians (counterclockwise)
-    """
-
-    t0 = +2.0 * (w * x + y * z)
-    t1 = +1.0 - 2.0 * (x * x + y * y)
-    roll_x = math.atan2(t0, t1)
-
-    t2 = +2.0 * (w * y - z * x)
-    t2 = +1.0 if t2 > +1.0 else t2
-    t2 = -1.0 if t2 < -1.0 else t2
-    pitch_y = math.asin(t2)
-
-    t3 = +1.0 - 2.0 * (y * y + z * z)
-    t4 = +2.0 * (w * z + x * y)
-    yaw_z = math.atan2(t3, t4)
-
-    return roll_x, pitch_y, yaw_z # in radians
-
-def get_yaw(x, y, z, w):
-    return euler_from_quaternion(x,y,z,w)[2] % (math.pi * 2)
 
 
 def main():

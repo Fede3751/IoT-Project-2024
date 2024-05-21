@@ -2,13 +2,13 @@ import math
 
 import rclpy
 from rclpy.node import Node
-
 from rclpy.executors import MultiThreadedExecutor
-
 
 from std_msgs.msg import String
 from geometry_msgs.msg import Point
 from nav_msgs.msg import Odometry
+
+import math_utils
 
 
 NUMBER_OF_SENORS = 3
@@ -65,41 +65,22 @@ class SimulationManager(Node):
 
     def store_sensor_position(self, sensor_id, position : Odometry):
 
-        #self.get_logger().info(f"Sensor {sensor_id} is giving us position: {position.pose.pose.position}")
         self.sensor_positions[sensor_id] = position.pose.pose.position
+
 
     def store_balloon_position(self, balloon_id, position : Odometry):
 
-        #self.get_logger().info(f"Balloon {balloon_id} is giving us position: {position.pose.pose.position}")
         self.balloon_positions[balloon_id] = position.pose.pose.position
 
 
     def forward_data(self, sensor_id, msg : String):
 
-        # self.get_logger().info("Forwarding data")
-
-        # self.get_logger().info(f"{self.sensor_positions}")
-        # self.get_logger().info(f"{self.balloon_positions}")
-
-
         for i in range(NUMBER_OF_BALLOONS):
-
             if sensor_id in self.sensor_positions and i in self.balloon_positions:
-                print(point_distance(self.sensor_positions[sensor_id], self.balloon_positions[i]))
-                if point_distance(self.sensor_positions[sensor_id], self.balloon_positions[i]) < SENSORS_RANGE:
+                
+                if math_utils.point_distance(self.sensor_positions[sensor_id], self.balloon_positions[i]) < SENSORS_RANGE:
                     self.balloons_rx[i].publish(msg)
         
-
-
-
-
-def point_distance(p0 : Point, p1 : Point):
-
-    p0 = (p0.x, p0.y, p0.z)
-    p1 = (p1.x, p1.y, p1.z)
-
-    vec = (p1[0] - p0[0], p1[1] - p0[1], p1[2] - p0[2])
-    return math.sqrt(vec[0]**2 + vec[1]**2 + vec[2]**2)
 
 
 
