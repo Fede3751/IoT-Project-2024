@@ -15,7 +15,8 @@ import math_utils
 from project_interfaces.action import Patrol
 
 
-MIN_ALTITUDE_TO_PERFORM_PATROL = 1
+MIN_ALTITUDE_TO_PERFORM_PATROL = 15
+SIZE = 10
 
 
 class BalloonController(Node):
@@ -24,7 +25,11 @@ class BalloonController(Node):
         super().__init__("drone_controller")
 
 
-        self.position = Point()
+        self.cache = []
+        self.cache_size = SIZE
+
+
+        self.position = Point(x = 0.0, y = 0.0, z = 0.0)
         self.yaw = 0
 
         self.stop_msg = Twist()
@@ -82,22 +87,20 @@ class BalloonController(Node):
 
         command_goal : Patrol.Goal = goal.request
 
-        self.get_logger().info("Action requested. Performing movement to target:")
-        self.get_logger().info(str(command_goal.targets))
+        self.get_logger().info(f"Action requested. Performing movement to targets:\n\t{command_goal.targets}")
 
         self.fly_to_altitude(MIN_ALTITUDE_TO_PERFORM_PATROL)
+
+
+        targets_patrolled = 0
         
         for target in command_goal.targets:
                 
-            self.get_logger().info("Altitude reached, now rotating...")
             self.rotate_to_target(target)
-
-            self.get_logger().info("Rotated to target. Now moving towards it...")
-            
-            # Next set of exercises will pick up from here!
             self.move_to_target(target)
 
-            self.get_logger().info("Movement completed, setting goal succeeded and completing action!")
+            self.get_logger().info(f"Movement to target {targets_patrolled} completed!")
+            targets_patrolled += 1
         
         
         goal.succeed()
@@ -126,7 +129,7 @@ class BalloonController(Node):
         stop_mov.angular = Vector3(x=0.0, y=0.0, z=0.0)
         self.cmd_vel_publisher.publish(stop_mov)
 
-    def rotate_to_target(self, target, eps = 0.02):
+    def rotate_to_target(self, target, eps = 0.5):
 
         # We compute the angle between the current target position and the target
         # position here
@@ -164,7 +167,7 @@ class BalloonController(Node):
         stop_msg.angular = Vector3(x=0.0, y=0.0, z=0.0)
         self.cmd_vel_publisher.publish(stop_msg)
 
-    def move_to_target(self, target, eps = 0.5, angle_eps = 0.05):
+    def move_to_target(self, target, eps = 0.5, angle_eps = 0.02):
 
 
         # Save the target position and compute the distance

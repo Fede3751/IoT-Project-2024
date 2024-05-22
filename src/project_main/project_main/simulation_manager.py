@@ -1,3 +1,4 @@
+import sys
 import math
 
 import rclpy
@@ -11,9 +12,10 @@ from nav_msgs.msg import Odometry
 import math_utils
 
 
-NUMBER_OF_SENORS = 3
-NUMBER_OF_BALLOONS = 3
-SENSORS_RANGE = 10
+NUMBER_OF_BALLOONS = int(sys.argv[1])
+NUMBER_OF_SENSORS = int(sys.argv[2])
+
+SENSORS_RANGE = 20
 
 class SimulationManager(Node):
 
@@ -26,7 +28,7 @@ class SimulationManager(Node):
         self.balloon_positions = {}
 
 
-        for i in range(NUMBER_OF_SENORS):
+        for i in range(NUMBER_OF_SENSORS):
 
             self.create_subscription(
                 Odometry,

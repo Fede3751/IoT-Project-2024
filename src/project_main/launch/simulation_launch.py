@@ -1,5 +1,7 @@
 import sys
 
+from random import randint
+
 from launch import LaunchDescription
 from launch_ros.actions import Node
 
@@ -14,6 +16,9 @@ from project_main.sim_utils import spawn_sdf
 
 
 WORLD_NAME = "iot_project_world"
+
+NUMBER_OF_BALLOONS = 3
+NUMBER_OF_SENSORS = 3
 
 #-----------------------------------------------------------------------------------------------
 # Launch file for the IoT Project. Launches all the nodes required to start the final solution
@@ -65,8 +70,8 @@ def generate_launch_description():
     )
 
 
-    #-------------------------- Spawn 3 balloons and bridge their topics -------------------------
-    for i in range(3):
+    #-------------------------- Spawn balloons and bridge their topics ---------------------------
+    for i in range(NUMBER_OF_BALLOONS):
         targets_to_spawn.append(spawn_sdf("resources/balloon/balloon.sdf", id = i, pos = (0, i*5, 0)))
 
         # Spawn bridge for cmd_vel and odometry for each of the spawned object
@@ -99,9 +104,9 @@ def generate_launch_description():
         )
 
 
-    #-------------------------- Spawn 3 sensors and bridge their topics -------------------------
-    for i in range(3):
-        targets_to_spawn.append(spawn_sdf("resources/sensor/sensor.sdf", id = i, pos = (10, i*5, 0)))
+    #-------------------------- Spawn sensors and bridge their topics ---------------------------
+    for i in range(NUMBER_OF_SENSORS):
+        targets_to_spawn.append(spawn_sdf("resources/sensor/sensor.sdf", id = i, pos = (randint(-40, 40), randint(-40, 40), 0)))
 
         targets_to_spawn.append(
         Node(
@@ -117,7 +122,10 @@ def generate_launch_description():
             Node(
                 package="project_main",
                 executable="sensor_controller",
-                namespace=f"Sensor_{i}"
+                namespace=f"Sensor_{i}",
+                parameters=[
+                    {'id': i}
+                ]
             )
         )
 
@@ -140,6 +148,21 @@ def generate_launch_description():
         Node(
             package="project_main",
             executable="simulation_manager",
+            arguments=[
+                f"{NUMBER_OF_BALLOONS}",
+                f"{NUMBER_OF_SENSORS}"
+            ]
+        )
+    )
+
+    targets_to_spawn.append(
+        Node(
+            package="project_main",
+            executable="fleet_coordinator",
+            arguments=[
+                f"{NUMBER_OF_BALLOONS}",
+                f"{NUMBER_OF_SENSORS}"
+            ]
         )
     )
 
