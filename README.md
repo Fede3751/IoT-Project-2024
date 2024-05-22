@@ -12,3 +12,7 @@ You can start the simulation displayed in the image with the command:
 ```
 ros2 launch project_main simulation_launch.py
 ```
+
+
+Everything is updated with the last lecture from 22/05.
+Detailed documentation for the library will soon follow here on the README file
