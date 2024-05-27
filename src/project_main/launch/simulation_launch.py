@@ -129,6 +129,41 @@ def generate_launch_description():
             )
         )
 
+    # #-------------------------- Spawn sensors and bridge their topics ---------------------------
+    # for i in range(NUMBER_OF_SENSORS):
+    #     targets_to_spawn.append(spawn_sdf("resources/active_sensor/active_sensor.sdf", id = i, pos = (randint(-40, 40), randint(-40, 40), 0)))
+
+    #     targets_to_spawn.append(
+    #     Node(
+    #         package="ros_gz_bridge",
+    #         executable="parameter_bridge",
+    #         arguments=[
+    #         f"/ActiveSensor_{i}/odometry@nav_msgs/msg/Odometry@ignition.msgs.Odometry"
+    #         ]
+    #     )
+    #     )
+
+    #     targets_to_spawn.append(
+    #     Node(
+    #         package="ros_gz_bridge",
+    #         executable="parameter_bridge",
+    #         arguments=[
+    #         f"/ActiveSensor_{i}/cmd_vel@geometry_msgs/msg/Twist@ignition.msgs.Twist"
+    #         ]
+    #     )
+    #     )
+
+    #     targets_to_spawn.append(
+    #         Node(
+    #             package="project_main",
+    #             executable="sensor_controller",
+    #             namespace=f"Sensor_{i}",
+    #             parameters=[
+    #                 {'id': i}
+    #             ]
+    #         )
+    #     )
+
 
 
     #------------------------------------ Spawn base station -------------------------------------
